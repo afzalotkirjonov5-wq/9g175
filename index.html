@@ -50,7 +50,7 @@ body{display:grid;place-items:center;overflow:hidden;background:radial-gradient(
 @keyframes openCore{0%,40%{--t:0}88%,100%{--t:1}}
 @media (prefers-reduced-motion:reduce){.plant,.glow{animation:none}.stem-seg{animation-name:none}.stem-seg--root{animation:stemGrow 2.4s cubic-bezier(.2,.7,.2,1) both}.leaf{animation:leafGrow 2.4s cubic-bezier(.2,.8,.2,1) var(--d) both}}
 
-/* ===== фото из цветка ===== */
+
 .scene{transition:opacity 3s ease 1.4s}.scene.gone{opacity:0}
 .stage{position:fixed;inset:0;overflow:hidden;pointer-events:none;z-index:5}
 .wrap{position:absolute;left:0;top:50%;display:flex;align-items:center;gap:20px;width:max-content;height:min(64vh,49vw);margin-top:calc(min(64vh,49vw)/-2);visibility:hidden;will-change:transform}
@@ -74,8 +74,7 @@ body{display:grid;place-items:center;overflow:hidden;background:radial-gradient(
 @keyframes float{to{translate:0 -8px;filter:drop-shadow(0 0 30px rgba(255,120,150,.9))}}
 .again{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:7;border:1px solid rgba(255,255,255,.4);background:rgba(0,0,0,.35);color:#fff;border-radius:20px;padding:6px 14px;font:14px system-ui,sans-serif;cursor:pointer;opacity:0;transition:opacity 1s}
 .again.show{opacity:1}
-
-/* ===== стартовая кнопка ===== */
+  
 body:not(.started) *,body:not(.started) *::before,body:not(.started) *::after{animation-play-state:paused!important}
 .start{position:fixed;inset:0;z-index:20;display:grid;place-items:center;transition:opacity 1s ease,visibility 1s}
 .start.hide{opacity:0;visibility:hidden;pointer-events:none}
